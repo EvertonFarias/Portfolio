@@ -227,6 +227,27 @@ p {
 
 
 
+.projects {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 30px;
+}
+.projects i {
+    font-size: 60px;
+}
+.project-card{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.project-card p{
+    font-size: 10px;
+}
+
+
 #contact p {
     font-size: 1.1rem;
     color: rgb(165, 165, 165);

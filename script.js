@@ -41,7 +41,7 @@ formHidden.addEventListener('click', (e) => {
 });
 
 
-
+//for move the form
 let isDragging = false;
 let offsetX = 0;
 let offsetY = 0;
