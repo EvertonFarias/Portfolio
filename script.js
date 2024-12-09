@@ -78,3 +78,20 @@ document.addEventListener('mouseup', () => {
         document.body.style.userSelect = '';
     }
 });
+
+//aparecer as sections devagar
+
+const myObserver = new IntersectionObserver ((e)=>{
+        e.forEach((e) =>{
+            if(e.isIntersecting){
+                e.target.classList.add("show");
+            }
+            else{
+                e.target.classList.remove("show");
+            }
+        })
+        
+}) ;
+
+const elements = document.querySelectorAll(".hidden");
+elements.forEach((element) => myObserver.observe(element));

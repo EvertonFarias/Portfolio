@@ -2,6 +2,20 @@
     padding: 0;
     margin: 0;
 }
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 h2 {
     color: #8257E6;
     font-size: 2em;
@@ -233,6 +247,7 @@ p {
     flex-direction: row;
     gap: 30px;
 }
+
 .projects i {
     font-size: 60px;
 }
@@ -264,10 +279,11 @@ p {
     align-items: center;
     position: fixed;
     cursor: move;
-    top: 20px;
+    top: 0;
     left: 0;
+    transform: translate(0, -80%);
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.322); 
+    background-color: rgba(0, 0, 0, 0.967); 
     z-index: 1000;
 }
 
