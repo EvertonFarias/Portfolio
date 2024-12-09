@@ -242,6 +242,7 @@ p {
     justify-content: center;
     align-items: center;
     position: fixed;
+    cursor: move;
     top: 20px;
     left: 0;
     width: 100%;

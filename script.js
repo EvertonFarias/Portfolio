@@ -42,3 +42,39 @@ formHidden.addEventListener('click', (e) => {
 
 
 
+let isDragging = false;
+let offsetX = 0;
+let offsetY = 0;
+
+
+formHidden.addEventListener('mousedown', (e) => {
+
+    isDragging = true;
+    
+
+    offsetX = e.clientX - formHidden.offsetLeft;
+    offsetY = e.clientY - formHidden.offsetTop;
+    
+
+    document.body.style.userSelect = 'none';
+});
+
+
+document.addEventListener('mousemove', (e) => {
+    if (isDragging) {
+
+        let left = e.clientX - offsetX;
+        let top = e.clientY - offsetY;
+        
+
+        formHidden.style.left = left + 'px';
+        formHidden.style.top = top + 'px';
+    }
+});
+
+document.addEventListener('mouseup', () => {
+    if (isDragging) {
+        isDragging = false;
+        document.body.style.userSelect = '';
+    }
+});
