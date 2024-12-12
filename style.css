@@ -19,7 +19,7 @@
 h2 {
     color: #8257E6;
     font-size: 2em;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 body {
@@ -131,16 +131,23 @@ a:hover {
     flex-direction: column;
 
 }
-
-#intro h2{
-   color: white;
-   margin-bottom: 5px;
-}
 #intro p{
-    font-size: 13px;
+    font-size: 14px;
     color: rgb(165, 165, 165);
-    margin-bottom: 5px;
+
 }
+
+#info h2{
+   color: #8257E6;
+   margin-bottom: -10px;
+}
+
+#info p{
+    font-size: 16px;
+    color: rgb(165, 165, 165);
+
+}
+
 div#profile {
     margin: auto;
     background-image: linear-gradient(135deg, hsl(258, 68%, 64%),  #080011);
@@ -170,6 +177,7 @@ section{
     color: rgb(165, 165, 165);
     font-size: 20px;
     margin-right: 5px;
+    margin-bottom: 10px;
 }
 #icons i:hover{
     color: #6442b4;
@@ -365,27 +373,68 @@ form button:active {
 
         gap: 100px;
     }
-    #skills i {
-        font-size: 3rem; 
+
+    div#profile{
+        width: 150px;
+        height: 150px;
     }
-
-
-}
-
-@media (max-width: 500) {
-
-    main{
-        gap: 50px;
-    }
-    section{
-        max-width: 100px;
+    #info h2{
+        margin: 0;
+     }
+    h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
     }
     p{
-        font-size: 10px;
+        font-size: 14px;
+    }
+    section{
+        max-width: 350px;
+    }
+
+    .skills{
+        max-width: 100px;
+    }
+    #skills i {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    .project-card{
+        max-width: 100px;
+    }
+    .projects{
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .project-card {
+        max-width: 200px;
+        padding: 20px;
+
+    }
+    .project-card p{
+        font-size: 14px;
+    
+
+    }
+    form {
         width: 70%;
     }
     
+
+
+
+
+
+
 }
+
+
+
+
+    
+
 
 
 
