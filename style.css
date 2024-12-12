@@ -251,23 +251,28 @@ p {
 
 .projects {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .projects i {
     font-size: 60px;
 }
 .project-card{
-    width: 400px;
+
+    width: 280px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 0.5px solid #8257e62f;
 
 }
 .project-card p{
-    font-size: 10px;
+    font-size: 13px;
 }
 
 
@@ -406,6 +411,7 @@ form button:active {
     .projects{
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
 
     }
     .project-card {
